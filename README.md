@@ -7,6 +7,8 @@ Basic server building block configuring time and users.
 
 For more information, visit [cb-common](https://github.com/frkline/cb-common)
 
+## Usage
+
 ## Features
 
 - Sets timezone to UTC
