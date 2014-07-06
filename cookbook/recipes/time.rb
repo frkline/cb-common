@@ -2,10 +2,6 @@
 # Cookbook Name:: cb-common
 # Recipe:: time
 #
-# Copyright (C) 2014 YOUR_NAME
-#
-# All rights reserved - Do Not Redistribute
-#
 
 # Set timezone to UTC
 # http://community.opscode.com/cookbooks/timezone-ii
