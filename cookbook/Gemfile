@@ -12,9 +12,11 @@ group :development do
   gem 'test-kitchen', '= 1.2.1'
   gem 'kitchen-vagrant', '= 0.15.0'
   gem 'guard', '= 2.6.1'
-  gem 'guard-kitchen', :git => "git://github.com/frkline/guard-kitchen.git", :branch => "all_on_start"
-  gem 'guard-foodcritic', :git => "git://github.com/frkline/guard-foodcritic.git", :branch => "patch-1"
+  gem 'guard-kitchen', :git => 'git://github.com/frkline/guard-kitchen.git', :branch => 'all_on_start'
+  gem 'guard-foodcritic', :git => 'git://github.com/frkline/guard-foodcritic.git', :branch => 'patch-1'
   gem 'guard-rspec', '= 4.2.10'
+  gem 'guard-rubocop', '= 1.1.0'
   gem 'foodcritic', '= 4.0.0'
   gem 'chefspec', '= 4.0.1'
+  gem 'rubocop', '= 0.24.1'
 end

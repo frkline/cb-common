@@ -1,0 +1,16 @@
+AllCops:
+  Include:
+    - Berksfile
+    - Rakefile
+    - Thorfile
+  Exclude:
+    - foodcritic/**/*
+    - Gemfile
+    - Guardfile
+
+ClassLength:
+  Enabled: false
+Encoding:
+  Enabled: false
+HashSyntax:
+  Enabled: false
