@@ -1,7 +1,9 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-guard 'kitchen' do
+# Guard::Kitchen
+# https://github.com/test-kitchen/guard-kitchen
+guard 'kitchen', :all_on_start => true do
   watch(%r{test/.+})
   watch(%r{^recipes/(.+)\.rb$})
   watch(%r{^attributes/(.+)\.rb$})
@@ -11,10 +13,21 @@ guard 'kitchen' do
   watch(%r{^resources/(.+)\.rb})
 end
 
-guard "foodcritic", :cookbook_paths => ".", :cli => "--epic-fail any, -I foodcritic/*", :all_on_start => false do  
+# Guard::Foodcritic
+# https://github.com/cgriego/guard-foodcritic
+guard "foodcritic", :cookbook_paths => ".", :cli => "--epic-fail any, -I foodcritic/*", :all_on_start => true do  
   watch(%r{attributes/.+\.rb$})
   watch(%r{providers/.+\.rb$})
   watch(%r{recipes/.+\.rb$})
   watch(%r{resources/.+\.rb$})
   watch('metadata.rb')
 end
+
+# Guard:RSpec
+# https://github.com/guard/guard-rspec
+guard :rspec, cmd: 'bundle exec rspec', :all_on_start => true do
+  watch(%r{^spec/(.+)_spec\.rb$})
+  watch(%r{^(recipes)/(.+)\.rb$})   { |m| "spec/#{m[1]}_spec.rb" }
+  watch('spec/spec_helper.rb')      { 'spec' }
+end
+
