@@ -10,3 +10,11 @@ guard 'kitchen' do
   watch(%r{^providers/(.+)\.rb})
   watch(%r{^resources/(.+)\.rb})
 end
+
+guard "foodcritic", :cookbook_paths => ".", :cli => "--epic-fail any, -I foodcritic/*", :all_on_start => false do  
+  watch(%r{attributes/.+\.rb$})
+  watch(%r{providers/.+\.rb$})
+  watch(%r{recipes/.+\.rb$})
+  watch(%r{resources/.+\.rb$})
+  watch('metadata.rb')
+end

@@ -10,9 +10,9 @@ end
 group :development do
   gem 'test-kitchen'
   gem 'kitchen-vagrant'
-  gem 'foodcritic'
   gem 'guard'
   gem 'guard-kitchen'
-  gem 'chefspec'
-  gem 'serverspec'
+  gem 'guard-foodcritic', :git => "git://github.com/miketheman/guard-foodcritic.git", :branch => "patch-1"
+  gem 'foodcritic', '>= 4.0'
+  gem 'chefspec', '>= 3.1'
 end
