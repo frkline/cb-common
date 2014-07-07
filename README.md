@@ -56,7 +56,7 @@ Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
 
 **Start Guard**  
 Guard will test, analyze, and lint the cookbook as changes are made by monitoring
-your local directory for changes. It will run ChefSpec, Foodcritic, and ServerSpec tests
+your local directory for changes. It will run ChefSpec, Foodcritic, Rubocop, and ServerSpec tests
 as required. For more information, see: https://github.com/test-kitchen/guard-kitchen.
 ```
 > cd cookbook
@@ -75,6 +75,13 @@ Foodcritic is a lint tool for Opscode Chef cookbooks. Along with the default che
 ```
 > cd cookbook
 > bundle exec foodcritic -I foodcritic/*
+```
+
+**Run RuboCop**
+RuboCop is a static code analyzer, based upon the standard Ruby community style guide. For more information, see: https://github.com/bbatsov/rubocop.
+```
+> cd cookbook
+> bundle exec rubocop
 ```
 
 **Run Tests with Kitchen**
