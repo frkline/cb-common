@@ -15,7 +15,7 @@ end
 
 # Guard::Foodcritic
 # https://github.com/cgriego/guard-foodcritic
-guard "foodcritic", :cookbook_paths => ".", :cli => "--epic-fail any, -I foodcritic/*", :all_on_start => true do  
+guard "foodcritic", :cookbook_paths => ".", :cli => "--epic-fail any -I foodcritic/*", :all_on_start => true do  
   watch(%r{attributes/.+\.rb$})
   watch(%r{providers/.+\.rb$})
   watch(%r{recipes/.+\.rb$})
