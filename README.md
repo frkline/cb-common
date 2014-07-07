@@ -77,7 +77,7 @@ Foodcritic is a lint tool for Opscode Chef cookbooks. Along with the default che
 > bundle exec foodcritic -I foodcritic/*
 ```
 
-**Run RuboCop**
+**Run RuboCop**  
 RuboCop is a static code analyzer, based upon the standard Ruby community style guide. For more information, see: https://github.com/bbatsov/rubocop.
 ```
 > cd cookbook
