@@ -14,7 +14,7 @@ For more information, visit [cb-common](https://github.com/frkline/cb-common)
 
 ## Configure the Cookbook
 
-0. [Configure Your Environment](https://github.com/frkline/dev-setup/)
+0. [Configure Your Environment](https://github.com/frkline/dev-setup/#configure-your-environment)
 1. Clone the Repository
 ```
 > git clone --recursive git@github.com:frkline/cb-common.git
