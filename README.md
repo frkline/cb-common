@@ -15,13 +15,19 @@ For more information, visit [cb-common](https://github.com/frkline/cb-common)
 ## Configure the Cookbook
 
 0. [Configure Your Environment](https://github.com/frkline/dev-setup/#configure-your-environment)
-1. Clone the Repository
+1. Clone the Repository  
 ```
 > git clone --recursive git@github.com:frkline/cb-common.git
-```
+```  
 2. Initialize the Cookbook's Dependencies  
 ```
 > cd cb-common/cookbook
+> bundle install
+```
+
+Note: Upon update of the Gemfile, update the Bundle:
+```
+> cd cookbook
 > bundle install
 ```
 
