@@ -27,7 +27,7 @@ For more information, visit [cb-common](https://github.com/frkline/cb-common)
 
 ## Usage
 
-Prerequisite: Configure the Cookbook
+Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
 
 **Start a CentOS 6.5 VirtualBox VM**
 ```
@@ -43,7 +43,7 @@ Prerequisite: Configure the Cookbook
 
 ## Cookbook Development
 
-Prerequisite: Configure the Cookbook
+Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
 
 **Start Guard**  
 Guard will test, analyze, and lint the cookbook as changes are made by monitoring
