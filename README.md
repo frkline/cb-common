@@ -84,7 +84,7 @@ RuboCop is a static code analyzer, based upon the standard Ruby community style 
 > bundle exec rubocop
 ```
 
-**Run Tests with Kitchen**
+**Run Tests with Kitchen**  
 Kitchen is an integration tool for developing and testing infrastructure code and software on isolated target platforms. Used alongside ServerSpec, we can write RSpec tests for checking if servers will be configured properly. For more information, see: https://github.com/test-kitchen/test-kitchen and http://serverspec.org/.
 ```
 > cd cookbook
