@@ -6,6 +6,7 @@
 # Set timezone to UTC
 # http://community.opscode.com/cookbooks/timezone-ii
 node.normal['tz'] = 'UTC'
+node.normal['timezone']['use_symlink'] = true
 include_recipe 'timezone-ii'
 
 # Start NTP with default timeservers for local geography

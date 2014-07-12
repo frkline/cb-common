@@ -4,8 +4,8 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  cb-common (0.1.0)
-    ntp (~> 1.6.4)
-    timezone-ii (~> 0.2.0)
+  cb-common (0.2.0)
+    ntp (= 1.6.4)
+    timezone-ii (= 0.2.0)
   ntp (1.6.4)
   timezone-ii (0.2.0)
