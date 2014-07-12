@@ -1,7 +1,7 @@
 require 'chefspec'
 require_relative 'spec_helper'
 
-describe 'cb-common::time' do
+describe 'cb-common::default' do
   let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
 
   it 'includes the timezone-ii::default recipe' do
