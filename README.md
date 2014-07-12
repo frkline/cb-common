@@ -74,7 +74,7 @@ ChefSpec is a unit testing framework for testing Chef cookbooks. ChefSpec makes 
 Foodcritic is a lint tool for Opscode Chef cookbooks. Along with the default checks, we include community-standard checks from [Etsy](https://github.com/etsy/foodcritic-rules) as well as [CustomInk](https://github.com/customink-webops/foodcritic-rules) For more information, see: http://acrmp.github.io/foodcritic/.
 ```
 > cd cookbook
-> bundle exec foodcritic -I foodcritic/*
+> bundle exec foodcritic -I foodcritic/* .
 ```
 
 **Run RuboCop**  
