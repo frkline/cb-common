@@ -8,3 +8,5 @@ version '0.3.0'
 
 depends 'ntp', '= 1.6.4'
 depends 'timezone-ii', '= 0.2.0'
+
+supports 'centos', '= 6.5'
