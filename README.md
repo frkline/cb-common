@@ -7,14 +7,14 @@ Basic server building block configuring time and users.
 
 For more information, visit [cb-common](https://github.com/frkline/cb-common)
 
-## Supports
-
-- CentOS 6.5
-
 ## Features
 
 - Sets timezone to UTC
 - Installs NTP as a service 
+
+## Supports
+
+- CentOS 6.5
 
 ## Configure
 
