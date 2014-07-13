@@ -48,7 +48,7 @@ Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
 > bundle exec vagrant up
 ```
 
-**Log in Once VM Started**
+**Connect to the VM**
 ```
 > cd cookbook
 > bundle exec vagrant ssh
