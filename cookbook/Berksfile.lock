@@ -2,10 +2,16 @@ DEPENDENCIES
   cb-common
     path: .
     metadata: true
+  hosts_file
+    git: git@github.com:frkline/hosts_file.git
+    revision: b10d76b3affad491eba114a555bde676621b6fc5
+    branch: release-0.3.0
 
 GRAPH
   cb-common (0.3.0)
+    hosts_file (= 0.3.0)
     ntp (= 1.6.4)
     timezone-ii (= 0.2.0)
+  hosts_file (0.3.0)
   ntp (1.6.4)
   timezone-ii (0.2.0)
