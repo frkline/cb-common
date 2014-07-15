@@ -11,12 +11,31 @@ For more information, visit [cb-common](https://github.com/frkline/cb-common)
 
 - Sets timezone to UTC
 - Installs NTP as a service 
+- Configures the /etc/hosts file
 
 ## Supports
 
 - CentOS 6.5
 
 ## Configure
+
+## Usage
+
+Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
+
+**Start a CentOS 6.5 VirtualBox VM**
+```
+> cd cookbook
+> bundle exec vagrant up
+```
+
+**Connect to the VM**
+```
+> cd cookbook
+> bundle exec vagrant ssh
+```
+
+## Development
 
 0. [Configure Your Environment](https://github.com/frkline/dev-setup/#configure-your-environment)
 1. Clone the Repository  
@@ -37,26 +56,6 @@ Note: Upon update of the Gemfile, update the Bundle:
 > cd cookbook
 > bundle install
 ```
-
-## Usage
-
-Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
-
-**Start a CentOS 6.5 VirtualBox VM**
-```
-> cd cookbook
-> bundle exec vagrant up
-```
-
-**Connect to the VM**
-```
-> cd cookbook
-> bundle exec vagrant ssh
-```
-
-## Development
-
-Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
 
 **Start Guard**  
 Guard will test, analyze, and lint the cookbook as changes are made by monitoring
