@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/frkline/guard-kitchen.git
-  revision: 7cdb19d8bcc0b08f2456bb9784d732216288cf07
+  revision: af484a63df18c99fcfaaaa4c42148abe8ef665b6
   branch: all_on_start
   specs:
     guard-kitchen (0.0.2)
